@@ -18,18 +18,22 @@
     <title>Home</title>
 </head>
 <body style="background-color: black;">
-    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark fixed-top bg-transparent border-light border-bottom">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark fixed-top bg-transparent border-light border-bottom">
         <div class="adaptive-block d-flex flex-row justify-content-between w-100">
             <div class="col-4 adaptive-div d-flex flex-center p-0 m-0">
-                <button id="menu-button" type="button" class="adaptive-btn text-center fw-bold bg-transparent border-0 text-white" style="font-family: 'Montserrat', sans-serif;">
-                        M E N U
+                <button id="menu-button" type="button" class="adaptive-btn text-center fw-semibold bg-transparent border-0 text-white" style="height: 5vh; font-family: 'Montserrat', sans-serif;">
+                        MENU
                 </button>
             </div>
             <div class="p-0 m-0 col-4 adaptive-div text-center d-flex justify-content-center align-items-center">
-                <a class="adaptive-link text-decoration-none fw-bold text-white" href="index.html" style="font-family: 'Montserrat', sans-serif;">N E X T</a>
+                <a id="logo" class="adaptive-link text-decoration-none fw-bold text-white" href="index.html" style="font-family: 'Montserrat', sans-serif;">N E X T</a>
             </div>
-            <div class="p-0 m-0 col-4 adaptive-div d-flex justify-content-end align-items-center">
-                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+            <div id="searchForn" class="p-0 m-0 col-4 adaptive-div d-flex justify-content-end align-items-center">
+                <a id="searchButton" class="me-2"><i id="search" class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i></a>
+                <div id="searchContainer" class="input-group d-none justify-content-center align-items-center" style="width: 20vh;">
+                    <input id="searchInput" type="text" class="rounded-0 form-control border-white text-white bg-transparent">
+                    <a id="closeButton" class="ms-2 me-2"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -37,7 +41,7 @@
         <div class="adaptive-block d-flex flex-row justify-content-between w-100">
             <div class="col-4 adaptive-div d-flex flex-center p-0 m-0">
                 <button class="adaptive-btn text-center fw-bold bg-transparent border-0 text-black" style="font-family: 'Montserrat', sans-serif;">
-                        M E N U 
+                        MENU 
                 </button>
             </div>
             <div class="p-0 m-0 col-4 adaptive-div text-center d-flex justify-content-center align-items-center">
@@ -53,8 +57,8 @@
         <div class="d-flex flex-column justify-content-between align-items-center" style="min-height: 90vh; background-color: #000000;">
             <div class="bg-transparent" style="height: 20vh; width: 100%;"></div>
             <div class="d-flex flex-row justify-content-center align-items-center col-10" style="height: 40vh; text-align: center;">
-                <a id="home-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Home</a>
-                <a id="about-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">About</a>
+                <a id="home-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="index.html">Home</a>
+                <a id="about-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="about.html">About</a>
                 <a id="service-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Service</a>
                 <a id="contact-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Contact</a>
                 <a id="join-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="register.html">Join</a>
@@ -77,35 +81,97 @@
     </div>
     
     
-    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 100px;">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10vh; margin-bottom: 10vh;">
         <div class="col-9 mb-4">   
             <div class="row">
                 <div class="fade col-9 border-end border-bottom border-top border-light pt-4 pb-4 pe-4 ps-0">
-                    <h1 class="fw-bold text-white" style="font-size: 15vh;">We are winning</h1>
+                    <h1 class="searchable-element fw-bold text-white" style="font-size: 15vh;">We are winning</h1>
                 </div>
                 <div class="fade col-3 border-bottom border-top d-flex justify-content-center align-items-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <p class="text-center w-100 pt-2 fw-semibold text-uppercase" style="font-size: 2vh; color: #c8c8c8;">Scroll down</p>
+                        <p class="searchable-element text-center w-100 pt-2 fw-semibold text-uppercase" style="font-size: 2vh; color: #c8c8c8;">Scroll down</p>
                         <img src="materials/621cc5f32aef2d61366df102_arrow.png" class="img-fluid" style="height: 10vh; width: 10vh;">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="fade col-3 border-end border-bottom border-light pt-4 pb-4 pe-4 ps-0">
-                    <p class="lh-1 fw-semibold" style="font-size: 4vh; color: #c8c8c8;">We create digital products: websites, services, mobile applications.</p>
+                    <p class="searchable-element lh-1 fw-semibold" style="font-size: 4vh; color: #c8c8c8;">We create digital products: websites, services, mobile applications.</p>
                 </div>
                 <div class="fade col-2 border-bottom border-end d-flex justify-content-center align-items-center">
                     <img id="rotating-image" src="materials/621cc7ae9334a365895cd639_shape.png" class="rotate-image img-fluid" style="height: 10.3vh; width: 12vh;">
                 </div>
                 <div class="fade col-7 border-bottom">
-                    <h1 class="fw-bold text-white text-end pt-4 pb-4 pe-0 ps-4" style="font-size: 13vh;">Digital studio</h1>
+                    <h1 class="searchable-element fw-bold text-white text-end pt-4 pb-4 pe-0 ps-4" style="font-size: 13vh;">Digital studio</h1>
                 </div>
             </div>
         </div>
         <div class="fade col-5 d-flex flex-row justify-content-between mt-4">
-            <button type="button" class="btn btn-outline-light btn-lg w-100 me-3 rounded-0 font-btn fw-semibold" style="font-family: 'Montserrat', sans-serif;">Join</button>
-            <button id="colorButton" type="button" class="rounded-0 fw-semibold w-100 ml-3" style="font-family: 'Montserrat', sans-serif;">Login</button>
+            <button type="button" class="btn btn-outline-light btn-lg w-100 me-3 rounded-0 font-btn fw-semibold" style="font-family: 'Montserrat', sans-serif;height: 10vh; font-size: 3vh;">Join</button>
+            <button id="colorButton" type="button" class="rounded-0 fw-semibold w-100 ml-3" style="font-family: 'Montserrat', sans-serif; height: 10vh; font-size: 3vh;">Login</button>
         </div>
+    </div>
+
+    <div id="next" class="fade d-flex flex-column justify-content-center align-items-center bg-light"  style="height: 60vh; width: 100%;">
+        <div class="fade d-flex flex-row justify-content-center align-items-center border-top border-bottom bg-black">
+                <img src="materials/backrotate2.gif" style="height: 30vh; width: 30vh;">
+                <h1 class="text-white fw-bold" style="font-size: 17vh;">N E X T</h1>
+                <img src="materials/backrotate.gif" style="height: 30vh; width: 40vh;">
+        </div>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10vh; margin-bottom: 10vh;">
+        <div class="col-9">
+            <div class="row">
+            <div class="fade col-lg-9 col-md-8 col-sm-7 col-xs-3 border-end border-bottom border-top border-light pt-4 pb-4 ps-0">
+                <h1 class="searchable-element fw-bold text-white" style="font-size: 15vh;">Our services</h1>
+            </div>
+            <div class="fade col-lg-3 col-md-4 col-sm-5 col-xs-9 border-bottom border-top d-flex justify-content-center align-items-center">
+                <button class="text-uppercase btn btn-outline-light rounded-0 fw-normal" style="height: 10vh; width: 30vh; font-size: 3vh; font-family: 'Montserrat', sans-serif;">Hire us</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-9 row" style="margin-top: 50px;">
+            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
+                <img src="materials/concept.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
+                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Concept</p>
+                <p class="searchable-element font text-white mt-3" style="font-size: 2.5vh;">Award winning concepts and ideas</p>
+                <a class="services font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
+            </div>
+            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
+                <img src="materials/strategy.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
+                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Strategy</p>
+                <p class="searchable-elementfont text-white mt-3" style="font-size: 2.5vh;">Strategic masterplans and business concept strategy</p>
+                <a class="services font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
+            </div>
+            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
+                <img src="materials/ecommerce.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
+                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Ecommerce</p>
+                <p class="searchable-element font text-white mt-3" style="font-size: 2.5vh;">High quality products that offer an all-in solution</p>
+                <a class="services font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
+            </div>  
+            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
+                <img src="materials/uxdesign.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
+                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Graphic Design</p>
+                <p class="searchable-element font text-white mt-3" style="font-size: 2.5vh;">Standard of own film production that delivers</p>
+                <a class="services font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fade d-flex flex-column justify-content-center align-items-center border-top border-bottom" style="height: 80vh;">
+        <div class="col-5 d-flex flex flex-column justify-content-center">
+            <h1 class="searchable-element fade font fw-bold text-white text-end" style="font-size: 12vh;">Let's work</h1>
+            <h1 class="searchable-element fade font fw-bold text-white" style="font-size: 12vh;">Together</h1>
+            <p class="searchable-element fade font text-white mt-3 text-center" style="font-size: 3vh;">Intuition and strategy integrate the research methodology that we also apply to traditional media.</p>
+            <div class="fade container-fluid d-flex justify-content-center align-items-center" style="width: 100%;">
+                <button class="font btn btn-outline-light text-uppercase rounded-0" style="width: 30%; font-size: 2vh;">Contact us</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="height: 80vh;">
+        
     </div>
 
 

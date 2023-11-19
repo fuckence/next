@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.font {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .menu-nav {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -18,10 +22,6 @@ body {
     background-color: rgb(255, 255, 255);
     transform: scaleX(0);
     transition: transform 0.3s ease;
-}
-
-.menu-nav:hover {
-    font-weight: 500;
 }
 
 .menu-nav:hover::after {
@@ -82,3 +82,28 @@ body {
     pointer-events: none;
 }
 
+.services {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+}
+.services::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.services:hover::after {
+    transform: scaleX(1);
+}
+
+.highlight {
+    background-color: yellow;
+}
