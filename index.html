@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark fixed-top bg-transparent border-light border-bottom">
         <div class="adaptive-block d-flex flex-row justify-content-between w-100">
             <div class="col-4 adaptive-div d-flex flex-center p-0 m-0">
-                <button class="adaptive-btn text-center fw-bold bg-transparent border-0 text-white" style="font-family: 'Montserrat', sans-serif;">
+                <button id="menu-button" type="button" class="adaptive-btn text-center fw-bold bg-transparent border-0 text-white" style="font-family: 'Montserrat', sans-serif;">
                         M E N U
                 </button>
             </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark bg-transparent border-light border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark bg-transparent">
         <div class="adaptive-block d-flex flex-row justify-content-between w-100">
             <div class="col-4 adaptive-div d-flex flex-center p-0 m-0">
                 <button class="adaptive-btn text-center fw-bold bg-transparent border-0 text-black" style="font-family: 'Montserrat', sans-serif;">
@@ -48,14 +48,42 @@
             </div>
         </div>
     </nav>
+
+    <div id="menu-block" class="d-none pointer-events-none" style="width: 100%; min-height: 100vh; position: fixed; background-color: #000000;">
+        <div class="d-flex flex-column justify-content-between align-items-center" style="min-height: 90vh; background-color: #000000;">
+            <div class="bg-transparent" style="height: 20vh; width: 100%;"></div>
+            <div class="d-flex flex-row justify-content-center align-items-center col-10" style="height: 40vh; text-align: center;">
+                <a id="home-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Home</a>
+                <a id="about-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">About</a>
+                <a id="service-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Service</a>
+                <a id="contact-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="">Contact</a>
+                <a id="join-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="register.html">Join</a>
+            </div>
+            <div id="menu-footer" class="d-flex flex-row justify-content-between col-6 mt-5 pt-5 text-bottom" style="height: 40vh;">
+                <div class="col-6">
+                    <p class="menu-nav text-white" style="font-size: 2.5vh;">
+                        Kabanbay Batyr, 58bk-1<br>
+                        Astana, Kazakhstan
+                    </p>
+                </div>
+                <div class="col-6 text-end">
+                    <p class="menu-nav text-white" style="font-size: 2.5vh;">
+                        Email: yucanmor@gmail.com<br>
+                        Phone: 8775 305 6122
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 100px;">
         <div class="col-9 mb-4">   
             <div class="row">
-                <div class="col-9 border-end border-bottom border-top border-light pt-4 pb-4 pe-4 ps-0">
+                <div class="fade col-9 border-end border-bottom border-top border-light pt-4 pb-4 pe-4 ps-0">
                     <h1 class="fw-bold text-white" style="font-size: 15vh;">We are winning</h1>
                 </div>
-                <div class="col-3 border-bottom border-top d-flex justify-content-center align-items-center">
+                <div class="fade col-3 border-bottom border-top d-flex justify-content-center align-items-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <p class="text-center w-100 pt-2 fw-semibold text-uppercase" style="font-size: 2vh; color: #c8c8c8;">Scroll down</p>
                         <img src="materials/621cc5f32aef2d61366df102_arrow.png" class="img-fluid" style="height: 10vh; width: 10vh;">
@@ -63,18 +91,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 border-end border-bottom border-light pt-4 pb-4 pe-4 ps-0">
+                <div class="fade col-3 border-end border-bottom border-light pt-4 pb-4 pe-4 ps-0">
                     <p class="lh-1 fw-semibold" style="font-size: 4vh; color: #c8c8c8;">We create digital products: websites, services, mobile applications.</p>
                 </div>
-                <div class="col-2 border-bottom border-end d-flex justify-content-center align-items-center">
-                    <img src="materials/621cc7ae9334a365895cd639_shape.png" class="rotate-image img-fluid" style="height: 10.3vh; width: 12vh;">
+                <div class="fade col-2 border-bottom border-end d-flex justify-content-center align-items-center">
+                    <img id="rotating-image" src="materials/621cc7ae9334a365895cd639_shape.png" class="rotate-image img-fluid" style="height: 10.3vh; width: 12vh;">
                 </div>
-                <div class="col-7 border-bottom">
+                <div class="fade col-7 border-bottom">
                     <h1 class="fw-bold text-white text-end pt-4 pb-4 pe-0 ps-4" style="font-size: 13vh;">Digital studio</h1>
                 </div>
             </div>
         </div>
-        <div class="col-5 d-flex flex-row justify-content-between mt-4">
+        <div class="fade col-5 d-flex flex-row justify-content-between mt-4">
             <button type="button" class="btn btn-outline-light btn-lg w-100 me-3 rounded-0 font-btn fw-semibold" style="font-family: 'Montserrat', sans-serif;">Join</button>
             <button id="colorButton" type="button" class="rounded-0 fw-semibold w-100 ml-3" style="font-family: 'Montserrat', sans-serif;">Login</button>
         </div>
