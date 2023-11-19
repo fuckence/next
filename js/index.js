@@ -37,14 +37,6 @@ document.getElementById('menu-button').addEventListener('click', function(event)
     menuBlock.classList.toggle('pointer-events-none');
 });
 
-$(".menu-nav").mouseover(function(){
-    
-});
-
-$(".menu-nav").mouseout(function(){
-    $(".menu-nav").removeClass("fw-semibold");
-});
-
 
 
 })
