@@ -85,12 +85,12 @@ $(document).ready(function(){
     });
     
     function validateForm() {
-        var name = document.getElementById("input1").value;
-        var lastname = document.getElementById("input1").value;
+        var fullname = document.getElementById("input1").value;
         var email = document.getElementById("input2").value;
-        var password = document.getElementById("input4").value;
-      
-        if (fullName.trim() === "") {
+        var company = document.getElementById("input3").value;
+        var message = document.getElementById("input4").value;
+
+        if (fullname.trim() === "") {
           alert("Please enter your full name");
           return false;
         }
