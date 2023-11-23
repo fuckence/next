@@ -14,8 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/index.js" charset="UTF-8"></script>
-    <title>Home</title>
+    <script src="js/service.js" charset="UTF-8"></script>
+    <title>Service</title>
 </head>
 <body style="background-color: black;">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark fixed-top bg-transparent border-light border-bottom">
@@ -58,7 +58,7 @@
             <div class="bg-black" style="height: 20vh; width: 100%;"></div>
             <div class="d-flex flex-row justify-content-center align-items-center col-10" style="height: 40vh; text-align: center;">
                 <a id="home-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="index.html">Home</a>
-                <a id="about-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="index.html#next">About</a>
+                <a id="about-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="about.html">About</a>
                 <a id="service-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="service.html">Service</a>
                 <a id="contact-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="contact.html">Contact</a>
                 <a id="join-link" class="menu-nav text-white col-2" style="font-size: 5vh;" href="register.html">Join</a>
@@ -79,82 +79,65 @@
             </div>
         </div>
     </div>
-    
-    
+
     <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10vh; margin-bottom: 10vh;">
         <div class="col-9 mb-4">   
             <div class="row">
                 <div class="fade col-9 border-end border-bottom border-top border-light pt-4 pb-4 pe-4 ps-0">
-                    <h1 class="searchable-element fw-bold text-white" style="font-size: 15vh;">We are winning</h1>
+                    <h1 class="searchable-element fw-bold text-white" style="font-size: 15vh;">Pricing list</h1>
                 </div>
                 <div class="fade col-3 border-bottom border-top d-flex justify-content-center align-items-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <a href="index.html#next"><p class="searchable-element text-center w-100 pt-2 fw-semibold text-uppercase" style="font-size: 2vh; color: #c8c8c8;">Scroll down</p></a> 
+                        <a class="text-decoration-none" href="service.html#next"><p class="searchable-element text-center w-100 pt-2 fw-semibold text-uppercase" style="font-size: 2vh; color: #c8c8c8;">Scroll down</p></a> 
                         <img src="materials/621cc5f32aef2d61366df102_arrow.png" class="img-fluid" style="height: 10vh; width: 10vh;">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="fade col-3 border-end border-bottom border-light pt-4 pb-4 pe-4 ps-0">
-                    <p class="searchable-element lh-1 fw-semibold" style="font-size: 4vh; color: #c8c8c8;">We create digital products: websites, designs, mobile applications.</p>
-                </div>
-                <div class="fade col-2 border-bottom border-end d-flex justify-content-center align-items-center">
-                    <img id="rotating-image" src="materials/621cc7ae9334a365895cd639_shape.png" class="rotate-image img-fluid" style="height: 10.3vh; width: 12vh;">
-                </div>
-                <div class="fade col-7 border-bottom">
-                    <h1 class="searchable-element fw-bold text-white text-end pt-4 pb-4 pe-0 ps-4" style="font-size: 13vh;">Digital studio</h1>
-                </div>
-            </div>
-        </div>
-        <div class="fade col-5 d-flex flex-row justify-content-between mt-4">
-            <button class="font transparent-button rounded-0 fw-semibold w-100 me-3" onclick="window.location.href='register.html'" style="height: 10vh; font-size: 3vh;">Join</button>
-            <button id="colorButton" type="button" class="rounded-0 fw-semibold w-100 ms-3" onclick="window.location.href='login.html'" style="font-family: 'Montserrat', sans-serif; height: 10vh; font-size: 3vh;">Login</button>
         </div>
     </div>
 
-    <div id="next" class="fade d-flex flex-column justify-content-center align-items-center bg-light"  style="height: 60vh; width: 100%;">
-        <div class="fade d-flex flex-row justify-content-center align-items-center border-top border-bottom bg-black">
-                <img src="materials/backrotate2.gif" style="height: 30vh; width: 30vh;">
-                <h1 class="text-white fw-bold" style="font-size: 17vh;">N E X T</h1>
-                <img src="materials/backrotate.gif" style="height: 30vh; width: 40vh;">
-        </div>
-    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 10vh;">
+        <div class="col-9 d-flex flex-row justify-content-between align-items-center">
+            <div class="fade col-4 d-flex flex-column p-4 text-center text-white border border-white" style="width: 30%;">
+                <i class="fa-regular fa-newspaper" style="color: #ffffff; font-size: 5vh;"></i> 
+                <h6 class="searchable-element font fw-semibold mt-2" style="font-size: 1.5vh;">MULTI-PAGE WEBSITE</h3>
+                <h4 class="searchable-element font fw-semibold" style="font-size: 3.5vh;">$ 1,500.00 USD</h3>
+                <p class="searchable-element font" style="font-size: 2.5vh;">The perfect designed website</p>
+                <p class="searchable-element font" style="font-size: 2.5vh;">
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                </p>
+                <button class="services-btn font" onclick="window.location.href = 'login.html';">Start</button>
+            </div>
 
-    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10vh; margin-bottom: 10vh;">
-        <div class="col-9">
-            <div class="row">
-            <div class="fade col-lg-9 col-md-8 col-sm-7 col-xs-3 border-end border-bottom border-top border-light pt-4 pb-4 ps-0">
-                <h1 class="searchable-element fw-bold text-white" style="font-size: 15vh;">Our services</h1>
+            <div class="fade col-4 d-flex flex-column p-4 text-center text-white border border-white" style="width: 30%;">
+                <i class="fa-regular fa-bookmark" style="color: #ffffff; font-size: 5vh;"></i> 
+                <h6 class="searchable-element font fw-semibold mt-2" style="font-size: 1.5vh;">WEBSITE DESIGN</h3>
+                <h4 class="searchable-element font fw-semibold" style="font-size: 3.5vh;">$ 1,000.00 USD</h3>
+                <p class="searchable-element font" style="font-size: 2.5vh;">The perfect designed website</p>
+                <p class="searchable-element font" style="font-size: 2.5vh;">
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                </p>
+                <button class="services-btn font" onclick="window.location.href = 'login.html';">Start</button>
             </div>
-            <div class="fade col-lg-3 col-md-4 col-sm-5 col-xs-9 border-bottom border-top d-flex justify-content-center align-items-center">
-                <button class="font transparent-button text-uppercase rounded-0" style="height: 10vh; width: 30vh; font-size: 3vh;">hire us</button>
-            </div>
-            </div>
-        </div>
-        <div class="col-9 row" style="margin-top: 50px;">
-            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
-                <img src="materials/concept.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
-                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Concept</p>
-                <p class="searchable-element font text-white mt-3 mt-md-2 mt-sm-1" style="font-size: 2.5vh;">Award winning concepts and ideas</p>
-                <a id="conceptbtn" class="font text-decoration-none text-white text-uppercase mt-4 fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
-            </div>
-            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
-                <img src="materials/strategy.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
-                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Documentation</p>
-                <p class="searchable-element font text-white mt-3 mt-md-2 mt-sm-1" style="font-size: 2.5vh;">Strategic masterplans and business concept strategy</p>
-                <a id="documentbtn" class="font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
-            </div>
-            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
-                <img src="materials/ecommerce.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
-                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Ecommerce</p>
-                <p class="searchable-element font text-white mt-3 mt-md-2 mt-sm-1" style="font-size: 2.5vh;">High quality products that offer an all-in solution</p>
-                <a id="ecommercebtn" class="font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
-            </div>  
-            <div class="fade col-lg-3 col-sm-4 col-xs-6 p-4 border border-light">
-                <img src="materials/uxdesign.png" class="img-fluid mb-3" style="height: 5vh; width: 5vh;">
-                <p class="searchable-element font text-white mt-3 fw-semibold" style="font-size: 3vh;">Graphic Design</p>
-                <p class="searchable-element font text-white mt-3 mt-md-2 mt-sm-1" style="font-size: 2.5vh;">Standard of own film production that delivers</p>
-                <a id="uxuibtn" class="font text-decoration-none text-white text-uppercase mt-4 text-underline fw-semibold" href="" style="font-size: 1.5vh;">Learn more</a>
+
+            <div class="fade col-4 d-flex flex-column p-4 text-center text-white border border-white" style="width: 30%;">
+                <i class="fa-solid fa-table-columns" style="color: #ffffff; font-size: 5vh;"></i> 
+                <h6 class="searchable-element font fw-semibold mt-2" style="font-size: 1.5vh;">SINGLE-PAGE WEBSITE</h3>
+                <h4 class="searchable-element font fw-semibold" style="font-size: 3.5vh;">$ 1,200.00 USD</h3>
+                <p class="searchable-element font" style="font-size: 2.5vh;">The perfect designed website</p>
+                <p class="searchable-element font" style="font-size: 2.5vh;">
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                    Features<br>
+                </p>
+                <button class="services-btn font" onclick="window.location.href = 'login.html';">Start</button>
             </div>
         </div>
     </div>
@@ -174,26 +157,26 @@
         <div class="col-10 d-flex flex-row justify-content-around align-items-center text-white">
             <div class="row col-10">
                 <div class="fade col-lg-3 col-md-4 col-sm-6">
-                    <h5 class="font footer_headers">Links:</h5>
+                    <h5 class="searchable-element font footer_headers">Links:</h5>
                     <ul style="list-style-type: none; padding-left: 0;">
-                        <li><a class="font footer-menu" href="index.html">Home</a></li>
-                        <li><a class="font footer-menu" href="index.html#next">About us</a></li>
-                        <li><a class="font footer-menu" href="contact.html">Contact</a></li>
-                        <li><a class="font footer-menu" href="service.html">Service</a></li>
-                        <li><a class="font footer-menu" href="register.html">Join</a></li>
+                        <li><a class="searchable-element font footer-menu" href="index.html">Home</a></li>
+                        <li><a class="searchable-element font footer-menu" href="">About us</a></li>
+                        <li><a class="searchable-element font footer-menu" href="contact.html">Contact</a></li>
+                        <li><a class="searchable-element font footer-menu" href="">Service</a></li>
+                        <li><a class="searchable-element font footer-menu" href="register.html">Join</a></li>
                     </ul>
                 </div>
                 <div class="fade col-lg-3 col-md-4 col-sm-6">
-                    <h5 class="font footer_headers">Contact:</h5>
+                    <h5 class="searchable-element font footer_headers">Contact:</h5>
                     <ul style="list-style-type: none; padding-left: 0;">
                         <li>
-                            <p class="font" style="font-size: 2.5vh; color: #b9b9b9;">
+                            <p class="searchable-element font" style="font-size: 2.5vh; color: #b9b9b9;">
                                 Kabanbay Batyr, 58bk-1<br>
                                 Astana, Kazakhstan
                             </p>
                         </li>
                         <li>
-                            <p class="font" style="font-size: 2.5vh; color: #b9b9b9;">
+                            <p class="searchable-element font" style="font-size: 2.5vh; color: #b9b9b9;">
                                 Email: yucanmor@gmail.com<br>
                                 Phone: 8775 305 6122
                             </p>
@@ -201,10 +184,10 @@
                     </ul>
                 </div>
                 <div class="fade col-lg-4 col-md-6 col-sm-6">
-                    <h5 class="font footer_headers">N E X T</h5>
+                    <h5 class="searchable-element font footer_headers">N E X T</h5>
                     <ul style="list-style-type: none; padding-left: 0;">
                         <li>
-                            <p class="font footer_menu" style="font-size: 2.5vh; color: #ffffff;">
+                            <p class="searchable-element font footer_menu" style="font-size: 2.5vh; color: #ffffff;">
                                 We are the company estimated to create digital ideas for you. Thanks to our group, more people are getting inspired in digital sphere. High quality products
                             </p>
                         </li>
@@ -222,4 +205,3 @@
         </div>
     </div>
 </body>
-</html>
