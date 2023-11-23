@@ -5,7 +5,7 @@ function toggleDivs() {
     for (var i = 0; i < divs.length; i++) {
         setTimeout(function(index) {
         divs[index].classList.toggle("show");
-        }, i * 300, i);
+        }, i * 200, i);
     }
 }
 toggleDivs();
